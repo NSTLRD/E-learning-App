@@ -1,7 +1,9 @@
-import 'package:flutter/cupertino.dart';
+
+
 import 'package:flutter/material.dart';
 import 'package:workspace_flutter/common/widgets/app_shadow.dart';
 import '../../common/widgets/text_widgets.dart';
+import '../sign_in/sign_in.dart';
 
 Widget appOnboardingPage(
     PageController controller,
@@ -9,7 +11,7 @@ Widget appOnboardingPage(
   String imagePath = "assets/images/reading.png",
   String title = "",
   String subtitle = "",
-  index = 0,
+  index = 0, required BuildContext context,
 }) {
 
   return Column(children: [
@@ -24,22 +26,33 @@ Widget appOnboardingPage(
       child: text16Normal(
           text: subtitle),
     ),
-    _nextButton(index, controller)
+    _nextButton(index, controller, context)
   ]);
 }
 
 
 //Next Button
-Widget _nextButton(int index, PageController controller) {
+Widget _nextButton(int index, PageController controller, BuildContext context) {
   return GestureDetector(
     onTap: () {
     if(index<3) {
       controller.animateToPage(
         index,
         duration: const Duration(milliseconds: 700),
-        curve: Curves.easeInOut,
-        );
-      }
+        curve: Curves.easeInOut,);
+      }else{
+      //Navigate to next screen
+      Navigator.pushNamed(
+          context,
+          "/sign_In",
+      );
+      // Navigator.push(
+      //     context,
+      //     MaterialPageRoute(
+      //         builder: (BuildContext context) => const SignIn(),
+      //   ),
+      // );
+     }
     },
     child: Container(
       width: 325,
