@@ -34,26 +34,29 @@ class Welcome extends ConsumerWidget {
                   controller: _controller,
                   scrollDirection: Axis.horizontal,
                   children: [
-                    appOnboardingPage(
-                        _controller,
+                    appOnboardingPage(_controller,
                         imagePath: "assets/images/reading.png",
                         title: "Bienvenidos a Elearning App",
                         subtitle:
-                        "Una aplicación para aprender de forma rápida y sencilla", index: 1),
+                            "Una aplicación para aprender de forma rápida y sencilla",
+                        index: 1,
+                        context: context),
                     // Page 2
-                    appOnboardingPage(
-                        _controller,
+                    appOnboardingPage(_controller,
                         imagePath: "assets/images/man.png",
                         title: "siendo tus mejores aliados",
                         subtitle:
-                        "Descubre una nueva forma de aprender con Elearning App", index: 2),
+                            "Descubre una nueva forma de aprender con Elearning App",
+                        index: 2,
+                        context: context),
                     // Page 3
-                    appOnboardingPage(
-                        _controller,
+                    appOnboardingPage(_controller,
                         imagePath: "assets/images/boy.png",
                         title: "Mantente actualizado",
                         subtitle:
-                        "Desde cursos básicos hasta avanzados, tenemos todo lo que necesitas", index: 3),
+                            "Desde cursos básicos hasta avanzados, tenemos todo lo que necesitas",
+                        index: 3,
+                        context: context),
                   ],
                 ),
                 Positioned(

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "480354635303",
+    "project_id": "elearningapp-8844c",
+    "storage_bucket": "elearningapp-8844c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:480354635303:android:98042138976ac862ce4802",
+        "android_client_info": {
+          "package_name": "com.elearning_app.workspace_flutter"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4zynHb2O98doPfaf4RMyanKG9yQ-Dn3I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
