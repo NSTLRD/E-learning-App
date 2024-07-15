@@ -2,12 +2,13 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:workspace_flutter/pages/application/application.dart';
-import 'package:workspace_flutter/pages/sign_in/sign_in.dart';
-import 'package:workspace_flutter/pages/sign_up/sign_up.dart';
-import 'package:workspace_flutter/pages/welcome/welcome.dart';
+
 
 import 'common/routes/routes.dart';
+import 'features/application/view/application.dart';
+import 'features/sign_in/view/sign_in.dart';
+import 'features/sign_up/view/sign_up.dart';
+import 'features/welcome/view/welcome.dart';
 import 'firebase_options.dart';
 import 'global.dart';
 
@@ -17,7 +18,7 @@ Future<void> main() async {
 }
 
 var routesMap = {
-    "/":(context)=>const Welcome(),
+    "/":(context)=>Welcome(),
     "/sign_In":(context)=>const SignIn(),
     "/sing_Up":(context)=>const SignUp(),
     "/application":(context)=>const Application()

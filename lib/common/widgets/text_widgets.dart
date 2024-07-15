@@ -2,8 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../utils/app_colors.dart';
 
+import '../utils/app_colors.dart';
 
 Widget text24Normal({String text = "", Color color = AppColors.primaryText}) {
 
@@ -11,7 +11,7 @@ Widget text24Normal({String text = "", Color color = AppColors.primaryText}) {
   return Text(
     text,
     textAlign: TextAlign.center,
-    style: TextStyle(color: color, fontSize: 24.sp, fontWeight: FontWeight.bold),
+    style: TextStyle(color: color, fontSize: 24.sp, fontWeight: FontWeight.normal),
   );
 }
 
@@ -20,7 +20,7 @@ Widget text16Normal(
   return Text(
     text,
     textAlign: TextAlign.center,
-    style: TextStyle(color: color, fontSize: 16.sp, fontWeight: FontWeight.bold),
+    style: TextStyle(color: color, fontSize: 16.sp, fontWeight: FontWeight.normal),
   );
 }
 Widget text14Normal(
@@ -28,7 +28,7 @@ Widget text14Normal(
   return Text(
     text,
     textAlign: TextAlign.start,
-    style: TextStyle(color: color, fontSize: 14.sp, fontWeight: FontWeight.bold),
+    style: TextStyle(color: color, fontSize: 14.sp, fontWeight: FontWeight.normal),
   );
 }
 
@@ -40,7 +40,7 @@ Widget textUnderline({String text="Your text"}){
     child:  Text(
       text,
       style: TextStyle(
-        fontWeight: FontWeight.bold,
+        fontWeight: FontWeight.normal,
         fontSize: 12.sp,
         color: AppColors.primaryText,
         decoration: TextDecoration.underline,
