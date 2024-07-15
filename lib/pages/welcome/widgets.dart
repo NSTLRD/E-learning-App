@@ -1,7 +1,9 @@
 
 
 import 'package:flutter/material.dart';
+import 'package:workspace_flutter/common/utils/constants.dart';
 import 'package:workspace_flutter/common/widgets/app_shadow.dart';
+import 'package:workspace_flutter/global.dart';
 import '../../common/widgets/text_widgets.dart';
 import '../sign_in/sign_in.dart';
 
@@ -41,17 +43,12 @@ Widget _nextButton(int index, PageController controller, BuildContext context) {
         duration: const Duration(milliseconds: 700),
         curve: Curves.easeInOut,);
       }else{
-      //Navigate to next screen
+      //remember that user has opened the app first time
+      Global.storageService.setBool(AppContants.STORAGE_DEVICE_OPEN_FIRST_KEY, true);
       Navigator.pushNamed(
           context,
           "/sign_In",
       );
-      // Navigator.push(
-      //     context,
-      //     MaterialPageRoute(
-      //         builder: (BuildContext context) => const SignIn(),
-      //   ),
-      // );
      }
     },
     child: Container(
