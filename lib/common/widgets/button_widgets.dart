@@ -1,10 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:workspace_flutter/common/widgets/app_bar.dart';
 import 'package:workspace_flutter/common/widgets/text_widgets.dart';
-import 'package:workspace_flutter/pages/sign_in/widgets/sign_in_widgets.dart';
-import 'package:workspace_flutter/pages/sign_up/sign_up.dart';
 
 import '../utils/app_colors.dart';
 import 'app_shadow.dart';
@@ -16,7 +13,7 @@ Widget appButton({
   String buttonName = "",
   bool isLogin = true,
   BuildContext? context,
-  void Function()? func,
+  void Function()? func
 }) {
   return GestureDetector(
     onTap: func,

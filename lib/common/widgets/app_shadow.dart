@@ -2,8 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../utils/app_colors.dart';
 
+import '../utils/app_colors.dart';
 
 BoxDecoration appBoxShadow(
     {Color color = AppColors.primaryElement,
@@ -23,6 +23,7 @@ BoxDecoration appBoxShadow(
             offset: const Offset(0, 1))
       ]);
 }
+//chatty
 
 BoxDecoration appBoxShadowWithRadius(
     {Color color = AppColors.primaryElement,
@@ -34,7 +35,7 @@ BoxDecoration appBoxShadowWithRadius(
       color: color,
       borderRadius: BorderRadius.only(
         topLeft: Radius.circular(20.h),
-        topRight: Radius.circular(20.h),
+        topRight: Radius.circular(20.h)
       ),
       border: border,
       boxShadow: [
